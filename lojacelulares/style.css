@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f6f5f8;
+    font-family: "Josefin Sans SemiBold", Verdana, Geneva, Tahoma, sans-serif;
+    overflow-y: scroll;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    height: 10px;
+    background-color: rgb(26, 26, 26);
+}
+
+.header-flow {
+    margin-top: 10px;
+}
+
+.search-flow {
+    height: 40px;
+    width: 1000px;
+    /* border-radius: 20px; */
+    border: none;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(26, 26, 26);
+}
+
+.search-box {
+    background-color: #FFF;
+    padding: 2px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.favcon-dec {
+    text-decoration: none;
+    color: #eee;
+}
+
+.favcon {
+    color: #eee;
+    font-size: 40px;
+    display: inline;
+    margin: 0px;
+    border: 0px;
+    padding-top: 90px;
+    padding-right: 70px;
+}
+
+.create {
+    /* background-color: rgb(26, 26, 26); */
+    justify-content: space-between;
+    color: #eee;
+    /* padding-left: 1560px; */
+    padding-top: 85px;
+    padding-right: 30px;
+    /* position: fixed; */
+    cursor: pointer;
+    float: flex;
+    flex-direction: column;
+}
+
+.words {
+    text-decoration: none;
+    color: #eee;
+}
+
+.account {
+    background-color: rgb(26, 26, 26);
+    padding-top: 70px;
+    padding-left: 1080px;
+    color: #eee;
+    text-decoration: none;
+    font-size: 50px;
+    border: none;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    cursor: pointer;
+    float: flex;
+}
+
+.btn-search {
+    text-decoration: none;
+    background: none;
+    border: none;
+    /* height: 45px; */
+    float: center;
+    cursor: pointer;
+}
+
+.bar {
+    overflow: hidden;
+    /* border-top: 2px solid black; */
+    padding: 8px;
+    background-color: rgb(56, 52, 52);
+}
+
+.btn-loc {
+    padding-top: 5px;
+    font-size: medium;
+    border: none;
+    background-color: rgb(56, 52, 52);
+    color: #eee;
+    margin-left: 200px;
+    justify-content: space-between;
+    display: flex;
+    float: left;
+}
+
+.icons {
+    display: inline;
+    text-decoration: none;
+    color: #eee;
+}
+
+.btn-socials {
+    float: right;
+    background-color: rgb(56, 52, 52);
+    cursor: pointer;
+    font-size: medium;
+    color: #eee;
+    padding-right: 200px;
+    border: none;
+    text-decoration: none;
+}
+
+.logo {
+    display: inline-flex;
+    padding-left: 70px;
+    padding-top: 75px;
+    overflow: hidden;
+}
+
+.menu a {
+    
+    padding: 50px;
+    color: #eee;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu {
+    display: flex;
+    background-color: rgb(26, 26, 26);
+    align-items: center;
+    overflow: hidden;
+    /* height: 90px; */
+    padding: 0px;
+    color: #eee;
+}
+
+.menu li {
+    display: inline-block;
+    
+}
+
+.menu-toggle {
+    float: right;
+    background-color: #FFF;
+}
+
+.menu ul {
+   /* padding: 20px; */
+   padding-bottom: 30px;
+   padding-left: 30%;
+   float: right;
+   height: 40px;
+   margin: 20px 15px;
+   margin-top: 0px;
+}
+
+.slider {
+    height: 545px;
+    width: 935px;
+    padding-right: 4px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.slider .slide img {
+    height: 100%;
+    width: 100%;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 220px;
+    left: 850px;
+    display: flex;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.circle:hover {
+    background-color: white;
+}
+
+.input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 410%;
+    height: 100%;
+}
+
+.slide {
+    width: 25%;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: -25%;
+}
+
+#slide1:checked ~ .s2 {
+    margin-left: -45%;
+}
